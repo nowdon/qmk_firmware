@@ -83,9 +83,9 @@ void encoder_update_user(uint8_t index, bool clockwise) {
     }
     else if (index == 1) { // Right encoder
         if (clockwise) {
-            tap_code(KC_UP);
-        } else {
             tap_code(KC_DOWN);
+        } else {
+            tap_code(KC_UP);
         }
     }
 }
