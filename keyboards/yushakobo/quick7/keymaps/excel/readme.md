@@ -5,8 +5,8 @@
 Left Encoder(CW: DOWN, CCW: UP)
 Right Encoder(CW: RIGHT, CCW: LEFT)
 ,----------- ---------- ------------,
-|   Left    |  Func1   |   Right    |
-|  Encoder  |          |  Encoder   |
+|   COPY    |  Func1   |    PASTE   |
+|           |          |            |
  ----------- ---------- ------------
 |  PASTE    |  PASTE   |   PASTE    |
 |  VALUE    | FORMULA  |   FORMAT   |
@@ -19,8 +19,8 @@ Right Encoder(CW: RIGHT, CCW: LEFT)
 ### Func1 Layer
 ```
 ,----------- ---------- ------------,
-|   Left    |  TRNS    |   Right    |
-|  Encoder  |          |  Encoder   |
+|    RGB    |  TRNS    |    RGB     |
+|   TOGGLE  |          |    MODE    |
  ----------- ---------- ------------
 |  INSERT   |  DELETE  |     F4     |
 |   LINE    |   LINE   |            |

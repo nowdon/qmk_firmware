@@ -32,12 +32,12 @@ enum custom_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Base */
     [_BASE] = LAYOUT(
-        KC_MUTE,   MO(_FUNC1), RGB_MOD,
+        LALT(KC_C),   MO(_FUNC1), LALT(KC_V),
         VALUE, FORMULA, FORMAT,
         LALT(KC_A),   KC_E,    KC_ENT
     ),
     [_FUNC1] = LAYOUT(
-        KC_MUTE,   KC_TRNS, RGB_MOD,
+        RGB_TOG,   KC_TRNS, RGB_MOD,
         LALT(LSFT(KC_SCLN)), LALT(KC_MINS), KC_F4,
         LCTL(KC_2),   LCTL(KC_3),    KC_ENT
     )
