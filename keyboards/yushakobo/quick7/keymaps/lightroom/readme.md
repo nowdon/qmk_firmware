@@ -1,25 +1,31 @@
-# The lightroom keymap for quick7
+# The lightroom CC keymap for quick7
 
 ### Base Layer
 ```
-Left Encoder(CW: UP, CCW: DOWN)
-Right Encoder(CW: RGB HUE-, CCW: RGB HUE+)
-,----------- --------- ------------,
-|   MUTE    |  Func1  |  RGB MODE  |
- ----------- --------- ------------
-| Shift+Tab |   UP    |    TAB     |
- ----------- --------- ------------
-|   LEFT    |  DOWN   |   RIGHT    |
-`----------- --------- ------------'
+Left Encoder(CW: TAB, CCW: Shift+TAB)
+Right Encoder(CW: UP, CCW: RGB DOWN)
+,----------- ---------- -------------,
+|  My Photo |  Func1   | Infomation  |
+|           |          |             |
+ ----------- ---------- -------------
+|   Shift   |  Reset   |     Tab     |
+|    TAB    |   All    |             |
+ ----------- ---------- -------------
+|   Auto    |  Reset   |    Undo     |
+|  retouch  |          |             |
+`----------- ---------- -------------'
 ```
 
 ### Func1 Layer
 ```
-,----------- --------- ------------,
-|   RESET   |  Func1  | RGB TOGGLE |
- ----------- --------- ------------
-|   HOME    |  VOL+   |    END     |
- ----------- --------- ------------
-| MEDIA <<  |  VOL-   |  MEDIA >>  |
-`----------- --------- ------------'
+,----------- ---------- -------------,
+|    RGB    |  TRNS    |    RGB      |
+|   TOGGLE  |          |    MODE     |
+ ----------- ---------- -------------
+|    Grid   |  Detail  |   Detail    |
+|    view   |   view   | full screen |
+ ----------- ---------- -------------
+|    Edit   |  Crop &   |  Healing   |
+|           |    Rotate |   Brush    |
+`----------- ---------- -------------'
 ```

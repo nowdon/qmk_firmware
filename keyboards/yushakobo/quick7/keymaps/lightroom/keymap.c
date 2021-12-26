@@ -29,14 +29,14 @@ enum custom_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Base */
     [_BASE] = LAYOUT(
-        KC_MUTE,   MO(_FUNC1), RGB_MOD,
-        S(KC_TAB), KC_UP,      KC_TAB,
-        KC_LEFT,   KC_DOWN,    KC_RGHT
+        KC_P, MO(_FUNC1), KC_I,
+        LSFT(KC_TAB), LSFT(KC_R), KC_TAB,
+        LSFT(KC_A), LSFT(LALT(KC_R)), LALT(KC_Z)
     ),
     [_FUNC1] = LAYOUT(
-        RESET,   KC_TRNS, RGB_TOG,
-        KC_HOME, KC_VOLU, KC_END,
-        KC_MPRV, KC_VOLD, KC_MNXT
+        RGB_TOG, KC_TRNS, RGB_MOD,
+        KC_G, KC_D, KC_F,
+        KC_E, KC_C, KC_H
     )
 };
 
@@ -57,17 +57,15 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 void encoder_update_user(uint8_t index, bool clockwise) {
     if (index == 0) { // Left encoder
         if (clockwise) {
-            tap_code(KC_VOLU);
+            tap_code(KC_RIGHT);
         } else {
-            tap_code(KC_VOLD);
+            tap_code(KC_LEFT);
         }
     }
     else if (index == 1) { // Right encoder
         if (clockwise) {
-            //rgblight_decrease_hue_noeeprom();
             tap_code(KC_UP);
         } else {
-            //rgblight_increase_hue_noeeprom();
             tap_code(KC_DOWN);
         }
     }
