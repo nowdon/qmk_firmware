@@ -28,4 +28,8 @@ Right Encoder(CW: UP, CCW: RGB DOWN)
 |    Edit   |  Crop &   |  Healing   |
 |           |    Rotate |   Brush    |
 `----------- ---------- -------------'
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> d26988f2d47e9c50dce0861f8030048118c1847c
